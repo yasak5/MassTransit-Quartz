@@ -355,3 +355,7 @@ CREATE INDEX IDX_QRTZ_FT_JG ON QRTZ_FIRED_TRIGGERS(SCHED_NAME,JOB_GROUP)
 CREATE INDEX IDX_QRTZ_FT_T_G ON QRTZ_FIRED_TRIGGERS(SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP)
 CREATE INDEX IDX_QRTZ_FT_TG ON QRTZ_FIRED_TRIGGERS(SCHED_NAME,TRIGGER_GROUP)
 GO
+                                                                                                                  
+                                                                                                                  
+                                                                                                                  ALTER TABLE QRTZ_FIRED_TRIGGERS ADD SCHED_TIME BIGINT NOT NULL;
+                                                                                                                  Go
